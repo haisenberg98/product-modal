@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3f810a671e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- background : #242426 -->
+    <!-- primary : #58736E -->
+    <!-- text-dark : #A6A6A6 -->
+    <!-- text-light : #D9D9D9 -->
+
+    <!-- Global container -->
+    <div class="flex justify-center items-center min-h-screen bg-[#0d0d0d]">
+      <!-- wrapper -->
+      <div
+        class="flex flex-col space-y-4 p-6 md:space-x-4 rounded-xl shadow-2xl bg-[#242426] md:flex-row md:p-16"
+      >
+        <!-- product image -->
+        <div>
+          <img
+            src="../product-modal/img/Gaming Mouse RGB - DHF-12800DPI.png"
+            alt="product 1"
+            class="mx-auto w-80 hover:scale-105 transition-all duration-150"
+          />
+        </div>
+        <!-- product details -->
+        <div class="flex flex-col space-y-3">
+          <!-- shipping bullet -->
+          <div
+            class="bg-[#f1c02c] mx-auto text-[#252525] rounded-full py-1 px-4 w-32 text-center text-sm md:mx-0"
+          >
+            Free Shipping
+          </div>
+          <!-- product name -->
+          <h2 class="text-[#D9D9D9] font-serif text-xl mb-10 font-bold">
+            Gaming Mouse RGB - DHF-12800DPI
+          </h2>
+          <!-- product price -->
+          <p class="line-through text-[#A6A6A6]">$700</p>
+          <p class="text-5xl text-[#A6A6A6]">$500</p>
+          <p class="text-xs text-[#A6A6A6]">
+            The offer is valid until December 24th or until the stock lasts!
+          </p>
+          <!-- add to cart button -->
+
+          <button class="group">
+            <div
+              class="bg-[#f1c02c] p-4 text-[#252525] rounded-xl shadow-[0_5px_#b38f23] text-center group-hover:shadow-none group-hover:translate-y-0.5 group-hover:bg-[#e6b00e] transition-all duration-200"
+            >
+              Add to cart
+            </div>
+          </button>
+
+          <!-- stocks -->
+          <div class="flex items-center space-x-2 group">
+            <div
+              class="bg-green-400 rounded-full w-3 h-3 group-hover:animate-ping"
+            ></div>
+            <span class="text-small text-[#A6A6A6]"> 50+ pcs. in stock </span>
+          </div>
+
+          <!-- Add to cart -->
+          <button class="group">
+            <div
+              class="flex justify-center items-center space-x-2 bg-[#242426] text-[#a6a6a6] border border-[#A6A6A6] p-4 rounded-lg group-hover:shadow-xl group-hover:-translate-y-0.5 transition-all duration-105"
+            >
+              <!-- icon -->
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="text-[#A6A6A6] text-lg">Add to cart</span>
+            </div>
+          </button>
+          <!-- Add to wish list -->
+          <button class="group">
+            <div
+              class="flex justify-center items-center space-x-2 bg-[#242426] text-[#a6a6a6] border border-[#A6A6A6] p-4 rounded-lg group-hover:shadow-2xl group-hover:-translate-y-0.5 transition-all duration-105"
+            >
+              <!-- icon -->
+              <i class="fa-regular fa-heart"></i>
+              <span class="text-[#A6A6A6] text-lg">Add to wishlist</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
